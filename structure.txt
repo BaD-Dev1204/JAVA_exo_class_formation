@@ -1,0 +1,34 @@
+Class Trainee
+{
+lastName : string
+firstName : string
+}
+
+Class Trainer
+{
+lastName : string
+firstName : string
+}
+
+Class Subject
+{
+name : string
+description : string
+}
+
+Class Room
+{
+number : string
+capacity : int
+}
+
+Class Training
+{
+name : string
+description : string
+trainees : List<Trainee>
+trainers : List<Trainer>
+responsibleTrainer : Trainer
+subjects : List<Subject>
+room : Room
+}
