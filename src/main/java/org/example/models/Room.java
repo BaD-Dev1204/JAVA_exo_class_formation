@@ -1,44 +1,41 @@
 package org.example.models;
 
+
 public class Room {
 
-    // #region Fields
-    private String _number;
-    private int _capacity;
+    //region Fields
+    private String _code;
+    private int _maxCapacity;
 
-    // #endregion
+    //endregion
 
-    // #region Constructor
+    //region Constructors
 
-    public Room(String number, int capacity) {
-        this._number = number;
-        this._capacity = capacity;
+    public Room(int maxCapacity, String code) {
+        this._maxCapacity = maxCapacity;
+        this._code = code;
+    }
+    //endregion
+
+    //region Getters/Setters
+
+    public String get_code() {
+        return _code;
     }
 
-    // #endregion
-
-    // #region Getters
-
-    public String get_number() {
-        return this._number;
+    public void set_code(String code) {
+        this._code = code;
     }
 
-
-    public int get_capacity() {
-        return this._capacity;
-    }
-    // #endregion
-
-    // #region Setters
-
-    public void set_number(String _number) {
-        this._number = _number;
+    public int get_maxCapacity() {
+        return _maxCapacity;
     }
 
-    public void set_capacity(int _capacity) {
-        this._capacity = _capacity;
+    public void set_maxCapacity(int maxCapacity) {
+        this._maxCapacity = maxCapacity;
     }
-
-// #endregion
+    //endregion
 
 }
+
+

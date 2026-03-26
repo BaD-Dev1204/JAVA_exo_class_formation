@@ -29,6 +29,6 @@ description : string
 trainees : List<Trainee>
 trainers : List<Trainer>
 responsibleTrainer : Trainer
-subjects : List<Subject>
+courses : List<Subject>
 room : Room
 }
